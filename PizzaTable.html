@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Ordering Form</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+        }
+
+        .container {
+            width: 360px;
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, select, textarea {
+            margin-bottom: 15px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+            border: 3px double black;
+        }
+
+        table th, table td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Pizza Ordering Form</h1>
+
+    <form>
+        <h2>Contact Information</h2>
+
+        <label>
+            Name:
+            <input type="text" name="name" required>
+        </label>
+
+        <label>
+            Phone:
+            <input type="tel" name="phone" required>
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email" required>
+        </label>
+
+        <h2>Select Pizza Size</h2>
+
+
+        <select name="pizzaSize" required>
+            <option value="">-- Select Size --</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="XLarge">XLarge</option>
+        </select>
+
+
+
+        <h2>Select Sauce</h2>
+        <label>
+            <input type="radio" name="sauce" value="Marinara" required>
+            Marinara
+        </label>
+        <label>
+            <input type="radio" name="sauce" value="Ranch" required>
+            Ranch
+        </label>
+        <label>
+            <input type="radio" name="sauce" value="No Sauce" required>
+            No Sauce
+        </label>
+
+
+
+
+        <h2>Select Toppings</h2>
+        <label><input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni</label>
+        <label><input type="checkbox" name="toppings" value="Sausage"> Sausage</label>
+        <label><input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms</label>
+        <label><input type="checkbox" name="toppings" value="Onions"> Onions</label>
+        <label><input type="checkbox" name="toppings" value="Peppers"> Peppers</label>
+        <label><input type="checkbox" name="toppings" value="Olives"> Olives</label>
+
+        <h2>Additional Instructions</h2>
+        <textarea name="instructions" rows="4" cols="30"></textarea>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>List of My Favorite Games</h2>
+    <table>
+        <tr>
+            <th>Developer</th>
+            <th>Title</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Konami</td>
+            <td>Metal Gear Solid</td>
+            <td>1999</td>
+        </tr>
+        <tr>
+            <td>Metal Gear Solid 2: Sons of Liberty</td>
+            <td>2001</td>
+        </tr>
+        <tr>
+            <td>Nexon</td>
+            <td>MapleStory</td>
+            <td>2003</td>
+        </tr>
+        <tr>
+            <td>Activision</td>
+            <td>Call of Duty 4: Modern Warfare</td>
+            <td>2007</td>
+        </tr>
+        
+            <td colspan="3">Count: 4</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
