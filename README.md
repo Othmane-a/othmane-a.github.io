@@ -84,19 +84,42 @@
     </section>
 
     <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/Othmane-a/othmane-a.github.io/blob/a682f66c8d12801be0c737192a8d2380ea2b91e2/HilCypher.py" target="_blank">
+  <h2>Projects</h2>
+
+  <article>
+    <h3>
+      <a href="https://github.com/Othmane-a/othmane-a.github.io/blob/a682f66c8d12801be0c737192a8d2380ea2b91e2/HilCypher.py" target="_blank">
         Hill Cipher Encryption
       </a>
-    </li>
-    <li>
+    </h3>
+    <p>
+      Implemented a Hill Cipher algorithm to encrypt plaintext files using
+      matrix-based cryptography techniques.
+    </p>
+    <p>
+      <strong>Skills:</strong> Cryptography, linear algebra, Unicode encoding,
+      algorithm design, Python
+    </p>
+  </article>
+
+  <article>
+    <h3>
       <a href="https://github.com/Othmane-a/othmane-a.github.io/blob/a682f66c8d12801be0c737192a8d2380ea2b91e2/PizzaCalc.java" target="_blank">
-        Pizza Calculator</a></li>
-      </ul>
-    </section>
+        Pizza Calculator
+      </a>
+    </h3>
+    <p>
+      Developed a Java application to calculate pizza slice dimensions based on
+      user input.
+    </p>
+    <p>
+      <strong>Skills:</strong> Object-oriented programming, Java, method calls,
+      data control, problem solving
+    </p>
+  </article>
+
+</section>
 
   </main>
-
 </body>
 </html>
