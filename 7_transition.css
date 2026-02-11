@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+nav#menuItems {
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+main {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+}
+
+header {
+    background-color: red;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 3em;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    margin-top: 40px;
+    font-size: 2.5em;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+article {
+    box-sizing: border-box;
+    padding: 27px;
+    color: #cccccc;
+    transition: all 2s ease;
+    transform-origin: center top;
+}
+
+article p {
+    text-align: justify;
+    margin: 10px 0;
+    hyphens: auto;
+}
+
+
+article:hover {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+article > p:first-of-type::first-letter {
+    font-family: "Times New Roman", serif;
+    font-size: 36px;
+    float: left;
+    line-height: 0.7;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+a[href="http://www.google.com"]::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: 6px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/96/Link-external-small-ltr-progressive.svg");
+    background-size: contain;
+    vertical-align: middle;
+    
+}
+
+a {
+    text-decoration: underline;
+    color: blue;
+}
+
+nav button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: goldenrod;
+}
+
+#jumpMenu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: goldenrod;
+}
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+    display: block;
+}
+
+#jumpMenu li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+#jumpMenu li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+#thanks {
+    text-align: right;
+    padding: 20px;
+    font-size: 33px;
+    margin: 40px;
+}
