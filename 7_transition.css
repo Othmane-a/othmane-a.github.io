@@ -138,8 +138,16 @@ footer {
 }
 
 #thanks {
-    text-align: right;
-    padding: 20px;
-    font-size: 33px;
-    margin: 40px;
+    text-align: right;      /* Align container content to right */
+    margin: 40px 40px 0 40px;
+}
+
+#thanks a {
+    display: inline-block;  /* Background fits text only */
+    background-color: lightblue;
+    border: 2px solid navy;
+    padding: 10px 15px;
+    font-size: 28px;
+    text-decoration: underline;
+    color: navy;
 }
