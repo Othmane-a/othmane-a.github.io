@@ -24,7 +24,7 @@ body{
 
 .site {
   width:100%;
-  max-width: 1200px;
+  max-width: var(--max-width);
   padding: 1rem;
 }
 
@@ -61,9 +61,55 @@ body{
 .card{
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius);
   padding: 1rem;
   margin-bottom: var(--gap);
+}
+
+@media (max-width: 600px){
+  body{
+    align-items: flex-start;
+  }
+
+  .site{
+    padding: 0.75rem;
+    max-width: var(--max-width);
+    padding: 1rem;
+  }
+
+  .site-header,
+  .card{
+    padding: 0.75rem;
+  }
+
+  .site-header h1{
+    font-size: 1.4rem;
+  }
+
+  .contact{
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .contact a{
+    display: inline-block;
+    padding: 0.35rem 0.5rem;
+    border-radius: 8px;
+  }
+
+  h2{
+    font-size: 1.05rem;
+  }
+
+  ul{
+    margin-left: 1rem;
+  }
+
+  .projects article{
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 h2{
