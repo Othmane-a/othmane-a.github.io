@@ -4,7 +4,6 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 body {
     background: linear-gradient(to bottom right, #9fc3cf, #7fb0c2);
     display: flex;
@@ -12,7 +11,6 @@ body {
     padding: 40px 0;
 }
 
-/* Main card container */
 .container {
     background: #f4f4f4;
     width: 520px;
@@ -23,13 +21,11 @@ body {
     text-align: center;
 }
 
-/* Header */
 h2 {
     margin-bottom: 15px;
     color: #333;
 }
 
-/* Input field */
 input[type="text"] {
     padding: 8px;
     width: 65%;
@@ -38,7 +34,6 @@ input[type="text"] {
     font-size: 14px;
 }
 
-/* Buttons */
 button {
     padding: 7px 12px;
     margin-left: 5px;
@@ -55,7 +50,6 @@ button:hover {
     background-color: #2e5885;
 }
 
-/* Pokemon image */
 #pokemonImage {
     height: 200px;
     margin-top: 15px;
@@ -65,7 +59,6 @@ audio {
     margin: 10px 0;
 }
 
-/* Move dropdowns */
 select {
     width: 45%;
     padding: 6px;
@@ -75,7 +68,6 @@ select {
     font-size: 13px;
 }
 
-/* Add to Team button */
 #addBtn {
     margin-top: 15px;
     background-color: #4CAF50;
@@ -85,13 +77,11 @@ select {
     background-color: #3d8e41;
 }
 
-/* Team section */
 #teamContainer {
     margin-top: 25px;
     text-align: left;
 }
 
-/* Individual team member */
 .team-member {
     border-top: 4px solid #bbb;
     padding-top: 15px;
@@ -101,19 +91,17 @@ select {
     gap: 15px;
 }
 
-/* Smaller team sprite */
 .team-member img {
     height: 80px;
 }
 
-/* Move list */
 .team-member ul {
     list-style-type: disc;
     padding-left: 20px;
 }
-/* Pixelated 4-bit effect */
 .glitch {
     image-rendering: pixelated;
     filter: contrast(200%) saturate(25%);
     animation: glitchShift 0.3s infinite alternate;
+
 }
