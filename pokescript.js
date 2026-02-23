@@ -1,4 +1,3 @@
-// Cache object to minimize API calls
 const cache = {};
 
 let currentPokemon = null;
@@ -16,7 +15,6 @@ function fetchPokemon() {
 
     if (!input) return;
 
-    // If we already fetched it before, use cached version
     if (cache[input]) {
         displayPokemon(cache[input]);
         return;
@@ -30,7 +28,7 @@ function fetchPokemon() {
             return response.json();
         })
         .then(data => {
-            cache[input] = data;   // Save to cache
+            cache[input] = data;
             displayPokemon(data);
         })
         .catch(error => alert(error.message));
@@ -41,8 +39,6 @@ function displayPokemon(data) {
 
     const img = document.getElementById("pokemonImage");
     img.src = data.sprites.front_default;
-
-    // Remove glitch effect after first successful search
     img.classList.remove("glitch");
 
     const cry = document.getElementById("pokemonCry");
@@ -51,7 +47,6 @@ function displayPokemon(data) {
     } else {
         cry.src = "";
     }
-
     const moves = data.moves.map(m => m.move.name);
 
     populateDropdown("move1", moves);
@@ -103,4 +98,5 @@ function addToTeam() {
     memberDiv.appendChild(moveList);
 
     teamContainer.appendChild(memberDiv);
+
 }
